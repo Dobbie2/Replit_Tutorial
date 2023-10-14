@@ -1,5 +1,5 @@
 print("Well we")
 print("just use more lines")
 print("of code")
-print("Dobbie")
-print("Scallie")
+print("Hi Ize Dobbie")
+print("Hello Scallie!")
