@@ -14,11 +14,11 @@ while True:
         break
     elif guess > number:
         count += 1
-        print("Too high")
+        print("\33[31mToo high \33[97m")
     elif guess < number:
         count += 1
-        print("Too low")
+        print("\33[94mToo low \33[97m")
 print()
-print ("Spot on!")
+print ("\33[92mSpot on!\33[97m")
 print("You completed the gaame with",count,"attempts")
 print()
