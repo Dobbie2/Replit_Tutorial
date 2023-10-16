@@ -20,22 +20,19 @@ print()
 print ("EPIC 🪨  🗒️  ✂️  Battle")
 print()
 
-count = 0
+
 score1 =( 0)
 score2 = (0)
 while True:
     player1 = input("Player 1 select your move( R, P ot S: ")
     player2 = input("Player 2 select your move (R, P ot S: ")
     print()
-    R = ("Rock")
-    P = ("Paper")
-    S = ("Scissors")
+   
+    if score1 == (2) or score2 == (2):
+        break
     if (player1 == 'R' and player2 == 'P'):
         print ("Player1's Rock is smothered by Player2's paper!")
         score1 += 1
-        count += 1
-    if count == (3):
-        exit()
     elif (player1 == 'P' and player2 == 'R'):
         print ("Player2's Rock is smothered by Player1's paper!")
         score2 += 1
@@ -46,3 +43,9 @@ while True:
         print ("Player1's paper is cut by Player2's scissors!")
         score1 += 1
 print ("Game over!")
+if player1 > player2:
+   print("Player 1 wins with score",score1)
+   print("Player 2 looses with score",score2)
+else:
+   print("Player 2 wins with score",score2)
+   print("Player 1 looses with score",score1)
