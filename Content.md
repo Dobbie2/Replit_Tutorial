@@ -11,15 +11,15 @@
 * Day 9 - Casting
 * Day 10 - A bit of Math
 * Day 11 - How many seconds in a year
-* Day 13 - 
-* Day 14 - 
-* Day 15 - 
-* Day 16 - 
-* Day 17 - 
-* Day 18 - 
-* Day 19 - 
-* Day 20 - 
-* Day 21 - 
+* Day 13 - What grade did I get?
+* Day 14 - 2 player rock, paper, scissor!
+* Day 15 - Loops
+* Day 16 - While True loop
+* Day 17 - Continue Statement
+* Day 18 - Guess the Number Guessing Game
+* Day 19 - For Loop
+* Day 20 - Range
+* Day 21 - Project Day! Build a Math Facts Game
 * Day 22 - 
 * Day 12 - 
 * Day 12 - 

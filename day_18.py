@@ -1,4 +1,3 @@
-#number = (79)
 
 import random
 
@@ -8,7 +7,7 @@ while True:
     print()
     guess = int(input("What is your guess?: "))
     if guess < 0:
-        print("Fail!! your guess of",guess, "is not between 0 and",number)
+        print("\33[93mFail!! your guess of",guess, "is not between 0 and",number)
         exit()
     elif guess == number:
         break

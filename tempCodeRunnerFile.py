@@ -1,16 +1,7 @@
-print("Fill in the blank lyrics!")
-print("(Type in the blank lyrics and see if you are as cool as me.)")
-print()
+principal = 1000 # initial amount
+rate = 5 / 100 # APR (5%)
+years = 10 # number of years
 
-count = 1
-print ("Never going to ______ you up")
-print()
-while True:
-    lyrics = input(" what is the missing lyrics?: ")
-    if lyrics != "give":
-        print("Nope, try again")
-        count +=1
-    elif lyrics == "give":
-        break
-print("Well done! It only took you",count, "attempts.")
-              
+for number in range(years):
+    principal += principal * rate
+    print("years", number+1, round(principal, 2))
