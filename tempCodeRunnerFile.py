@@ -1,19 +1,32 @@
-print("Math Game\n")
-a = 0
-b = ""
-while b != "yes":
-  multiples = int(input("\nName your multiples: "))
-  for i in range (1,11):
-    answer = int(input(f'{multiples} x {i} = '))
-    if answer == (i*multiples):
-      print("Great work!\n")
-      a += 1
-    else:
-      print("The answer is",(i*multiples),"\n")
-  if a == 10:
-    print("Amazing! Perfect score! 10 out of 10 \n")
-  else:
-    print(f"Great job!, you get {a} out of 10 \n")
-  b = input("Would you like to exit? ")
-  a = 0
-exit()
+import random
+print("\33[92mGuess the number game")
+print()
+print("Number will be between 0 and 100\33[97m")
+print()
+while True:
+    number = (random.randint(0,100))
+    count = 1
+    while True:
+        print()
+        guess = int(input("What is your guess?: "))
+        if guess == number:
+            print()
+            print ("\33[92mSpot on!")
+            print("It took you",count,"guesses to get the radom number correct!\33[97m")
+            print()
+            again = input("Do you want play again? Y/N ")
+            if again.lower() == "y":
+                break
+            else:
+                exit()
+        
+        elif guess < 0:
+            print("\33[93mFail!! your guess of",guess, "is not between 0 and",number)
+            exit()
+        elif guess > number:
+            count += 1
+            print("\33[31mToo high \33[97m")
+        elif guess < number:
+            count += 1
+            print("\33[94mToo low \33[97m")
+ 
