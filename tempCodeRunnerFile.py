@@ -1,7 +1,5 @@
-principal = 1000 # initial amount
-rate = 5 / 100 # APR (5%)
-years = 10 # number of years
-
-for number in range(years):
-    principal += principal * rate
-    print("years", number+1, round(principal, 2))
+s = int(input("Start at: "))
+e = int(input("End before: "))
+i = int(input("Increment betwee values: "))
+for i in range(s,e,i):
+  print(i)
