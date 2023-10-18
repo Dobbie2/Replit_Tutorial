@@ -1,17 +1,17 @@
-print("Replit Login System")
-print()
-
-def login():
+def rollDice():
+    print("Infinity Decice 🎲")
+    print()
+    sides = int(input("How many sides does the dice have?: "))
     while True:
-        userName = input("What is your user Name > ")
-        password = input("What is your password > ")
+        import random
+        dice = random.randint(1, sides)
         print()
-        if userName != ("david") or password != ("baldies4life"):
-          print("\33[31mWhoops! I don't recognize that username or password. Try again!\33[97m")
-          print()
+        print("You rolled",dice)
+        print()
+        again = input("\33[31mRoll again?: \33[97m")
+        if again == "y":
+            continue
         else:
-          print("\33[92mWelcome to Replit!")
-          print()
-          break
+            break
 
-login()
+rollDice()
