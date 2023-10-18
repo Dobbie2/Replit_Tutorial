@@ -1,32 +1,17 @@
-import random
-print("\33[92mGuess the number game")
+print("Replit Login System")
 print()
-print("Number will be between 0 and 100\33[97m")
-print()
-while True:
-    number = (random.randint(0,100))
-    count = 1
-    while True:
+
+def login():
+    userName = input("What is your user Name > ")
+    password = input("What is your password > ")
+    print()
+    print (userName,password)
+    print()
+    if userName != ("david") or password != ("baldies4life"):
+        print("\33[31mWhoops! I don't recognize that username or password. Try again!\33[97m")
         print()
-        guess = int(input("What is your guess?: "))
-        if guess == number:
-            print()
-            print ("\33[92mSpot on!")
-            print("It took you",count,"guesses to get the radom number correct!\33[97m")
-            print()
-            again = input("Do you want play again? Y/N ")
-            if again.lower() == "y":
-                break
-            else:
-                exit()
-        
-        elif guess < 0:
-            print("\33[93mFail!! your guess of",guess, "is not between 0 and",number)
-            exit()
-        elif guess > number:
-            count += 1
-            print("\33[31mToo high \33[97m")
-        elif guess < number:
-            count += 1
-            print("\33[94mToo low \33[97m")
- 
+    else:
+        print("\33[92mWelcome to Replit!")
+        print()
+
+login()
