@@ -1,17 +1,23 @@
-def rollDice():
-    print("Infinity Decice 🎲")
-    print()
-    sides = int(input("How many sides does the dice have?: "))
-    while True:
-        import random
-        dice = random.randint(1, sides)
-        print()
-        print("You rolled",dice)
-        print()
-        again = input("\33[31mRoll again?: \33[97m")
-        if again == "y":
-            continue
-        else:
-            break
+def dice(number6,number8):
+    import random
+    score = int(random.randint(1,number6)) * int(random.randint(1,number8))
+    return score
+    
 
-rollDice()
+print(" \033[94m🛡  Character Stats Generator ⚔\033[0m")
+print()
+print("Type exit to leave the generator")
+print()
+while True:
+  
+  finalScore = dice(6,8)
+  name =input("Name your warrior> ")
+  if name == "exit":
+     break
+  elif finalScore >= 24:
+    print ("redTheir health is",finalScore+"hp")
+    print()
+     
+  else:
+    print ("Their health is",finalScore,"hp")
+    print()
