@@ -24,7 +24,7 @@ def play():
     input()
 
 while True:
-  # clear the screen 
+ os.system("clear")
 
   # Show the menu
 
