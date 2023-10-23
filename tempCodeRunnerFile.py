@@ -1,10 +1,14 @@
-import os, time
-print("Welcome")
-print("to")
-print("Replit")
-time.sleep(2)
+def calc():
+    global place
+    place = "Rom"
+    name = "Le"
 
-os.system("clear")
+    print ("place in global"), "plac" in globals() 
+    print ("place in local"), "plac" in locals()
+    print ("name in global"), "nam" in globals() 
+    print ("name in local"), "nam" in locals()
+    return
 
-username = input("Username: ")
-print("Welcome, " + username + "!")
+place = "Berli"
+print (place)
+calc()
